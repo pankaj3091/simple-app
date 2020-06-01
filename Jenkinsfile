@@ -3,14 +3,12 @@ pipeline {
     tools {
         maven 'maven'
     }
-    options {
-        buildDiscarder logRotator(daysToKeepStr: '5', numToKeepStr: '7')
-    }
     stages{
         stage('Build'){
             steps{
-                 sh 'mvn clean package'
+                 bat 'mvn clean package'
                  archiveArtifacts artifacts: 'target/*.war', onlyIfSuccessful: true
+		    echo "Build process completed...!!"
             }
         }
         stage('Upload War To Nexus'){
