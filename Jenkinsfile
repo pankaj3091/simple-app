@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('Build'){
             steps{
-                 bat 'mvn clean package'
+                 bat 'mvn clean package deploy'
                  archiveArtifacts artifacts: 'target/*.war', onlyIfSuccessful: true
 		    echo "Build process completed...!!"
             }
