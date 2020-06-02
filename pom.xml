@@ -41,11 +41,11 @@
 	
 <distributionManagement>
     	<snapshotRepository>
-     	 	<id>nexus-repo</id>
+     	 	<id>560DBE98-A7CFB644-647DD125-30D8F329-D3121B88</id>
      	 	<url>http://localhost:8081/repository/SAMPLE-SNAP/</url>
    	 </snapshotRepository>
    	 <repository>
-      		<id>nexus-repo</id>
+      		<id>560DBE98-A7CFB644-647DD125-30D8F329-D3121B88</id>
      	 	<url>http://localhost:8081/repository/SAMPLE-REL/</url>
     	</repository>
   </distributionManagement>
