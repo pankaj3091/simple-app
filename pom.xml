@@ -39,20 +39,16 @@
   </dependencies>
 	
 	
-	<distributionManagement>
+<distributionManagement>
     	<snapshotRepository>
-     	 <id>nexus-snapshots</id>
-     	 <url>http://localhost:8081/repository/SAMPLE-SNAP/</url>
+     	 	<id>nexus-repo</id>
+     	 	<url>http://localhost:8081/repository/SAMPLE-SNAP/</url>
    	 </snapshotRepository>
    	 <repository>
-      	<id>nexus-releases</id>
-     	 <url>http://localhost:8081/repository/SAMPLE-REL/</url>
+      		<id>nexus-repo</id>
+     	 	<url>http://localhost:8081/repository/SAMPLE-REL/</url>
     	</repository>
   </distributionManagement>
-
-	
-	
- 
 
   
   <build>
